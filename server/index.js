@@ -12,8 +12,8 @@ const express = require('express');
 //////////////////////////
 // Constants
 //////////////////////////
-
-const port = 8080;
+const port = process.env.PORT || 8080;
+// const port = 8080;
 const pathToFrontend = path.join(__dirname, '../frontend');
 const app = express();
 
